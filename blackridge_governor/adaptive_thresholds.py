@@ -21,13 +21,12 @@ Safety constraints:
     - Locked during CDO (no adaptation during crisis)
 """
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Dict, List, Optional, Tuple
 
 import numpy as np
 
-from .governor import Governor, MODES, THRUST_FRACS
-
+from .governor import MODES, Governor
 
 # ── Parameter Definitions ──────────────────────────────────────
 

@@ -17,8 +17,8 @@ Usage:
     )
 """
 
-from .governor import MODES, THRUST_FRACS, Governor
 from .adaptive_thresholds import AdaptiveGovernor, AdaptiveThresholdController
+from .governor import MODES, THRUST_FRACS, Governor
 
 __version__ = "1.2.1"
 __all__ = [
