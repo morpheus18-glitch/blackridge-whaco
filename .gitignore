@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.whl
+*.tar.gz
+.eggs/
+*.egg
+demo_output/
+.ruff_cache/
+.coverage
+htmlcov/

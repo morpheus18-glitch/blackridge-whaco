@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=68.0,<75.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blackridge-whaco"
+version = "1.2.0"
+description = "WHACO (Warranted Hierarchical Autonomous Cooperative Operations) — resource-aware distributed autonomy governor"
+readme = "README.md"
+license = {text = "Proprietary"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Blackridge Autonomy LLC", email = "contact@blackridgeautonomy.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: POSIX :: Linux",
+]
+keywords = ["swarm", "autonomy", "governor", "drone", "uas", "px4", "throttle", "multi-agent"]
+
+dependencies = [
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+viz = [
+    "matplotlib>=3.7",
+]
+dev = [
+    "matplotlib>=3.7",
+    "ruff>=0.3.0",
+    "coverage>=7.0",
+]
+all = [
+    "matplotlib>=3.7",
+    "ruff>=0.3.0",
+    "coverage>=7.0",
+]
+
+[project.urls]
+Homepage = "https://blackridgeautonomy.com"
+Documentation = "https://github.com/morpheus18-glitch/blackridge-whaco"
+Repository = "https://github.com/morpheus18-glitch/blackridge-whaco"
+
+[tool.setuptools.packages.find]
+include = ["blackridge_governor*"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.coverage.run]
+source = ["blackridge_governor"]
+omit = ["*/test_*", "*/demo.py"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 80
