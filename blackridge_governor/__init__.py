@@ -20,7 +20,7 @@ Usage:
 from .governor import MODES, THRUST_FRACS, Governor
 from .adaptive_thresholds import AdaptiveGovernor, AdaptiveThresholdController
 
-__version__ = "1.2.0"
+__version__ = "1.2.1"
 __all__ = [
     "Governor", "MODES", "THRUST_FRACS",
     "AdaptiveGovernor", "AdaptiveThresholdController",

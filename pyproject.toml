@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "blackridge-whaco"
-version = "1.2.0"
-description = "WHACO (Warranted Hierarchical Autonomous Cooperative Operations) — resource-aware distributed autonomy governor"
+version = "1.2.1"
+description = "WHACO (Warranted Hierarchical Autonomous Cooperative Operations) — resource-aware distributed autonomy governor for energy-constrained multi-agent drone systems"
 readme = "README.md"
 license = {text = "Proprietary"}
 requires-python = ">=3.10"
