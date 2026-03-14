@@ -139,4 +139,4 @@ Standalone threshold controller using diagonal CMA-ES with safety constraints (r
 
 Proprietary. Copyright (c) 2026 Blackridge Autonomy LLC. All rights reserved.
 
-See [LICENSE](LICENSE) for details. For licensing inquiries: contact@blackridgeautonomy.com
+See [LICENSE](LICENSE) for details. For licensing inquiries: austin@blackridgeautonomy.com

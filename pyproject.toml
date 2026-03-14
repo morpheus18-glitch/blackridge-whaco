@@ -10,7 +10,7 @@ readme = "README.md"
 license = {text = "Proprietary"}
 requires-python = ">=3.10"
 authors = [
-    {name = "Blackridge Autonomy LLC", email = "contact@blackridgeautonomy.com"},
+    {name = "Blackridge Autonomy LLC", email = "austin@blackridgeautonomy.com"},
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
